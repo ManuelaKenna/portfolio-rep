@@ -1,3 +1,21 @@
+:root {
+    --pink: #db9a9c;
+    --charcoal: #3a4953;
+    --grey:#95929F;
+    --mauve: #BAAFB8;
+    --gunmetal: #2F3339;
+}
+
+body {
+color:var(--mauve);
+height:inherit
+}
+
+figure{
+    background-image:url("../images/15-8x10.jpg");
+    height:auto
+}
+
 h1 {
     text-align: center;
 }
