@@ -1,38 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <main>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manuela</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/CSS/style.css">
-</head>
-<div class="topnav">
-    <a class="active" href="#home">Home</a>
-    <a href="#news">News</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
-  </div>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Manuela</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans:wght@300&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="./assets/CSS/style.css">
+    </head>
+
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+
 </main>
+
 <body class="figure">>
-        <header>
-            <h1>Manuela Kenna</h1>
-        </header>
+    <header>
+        <h1>Manuela Kenna</h1>
+    </header>
     <section>
         <h2>Projects</h2>
         <img src="https://via.placeholder.com/150" alt="dummy image">
         <img src="https://via.placeholder.com/150" alt="dummy image">
         <img src="https://via.placeholder.com/150" alt="dummy image">
         <img src="https://via.placeholder.com/150" alt="dummy image">
+        <div id="#Projects"></div>
     </section>
-<div class="circular_image">
-    <img src=./assets/images/Portrait1smaller.jpg>
-  </div>
-<div class="figure">
-</div>
+    <div class="circular_image">
+        <img src=./assets/images/Portrait1smaller.jpg>
+    </div>
+
+    <div class="figure">
+    </div>
+    <div class="container">
+        <form action="action_page.php">
+            <h2>Contact Me</h2>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </div>
+    <footer>
+        <h3> Thank you for visiting my portfolio! </h3>
+    </footer>
 </body>
+
 </html>

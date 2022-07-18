@@ -1,14 +1,14 @@
 :root {
-    --pink: #db9a9c;
-    --charcoal: #3a4953;
-    --grey:#95929F;
-    --mauve: #BAAFB8;
-    --gunmetal: #2F3339;
+  --pink: #db9a9c;
+  --charcoal: #3a4953;
+  --grey: #95929F;
+  --mauve: #BAAFB8;
+  --gunmetal: #2F3339;
 }
 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #333;
+  background-color: var(--gunmetal);
   overflow: hidden;
 }
 
@@ -19,7 +19,6 @@
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-family: 'Monsterrat', sans-serif;
   font-size: 17px;
 }
 
@@ -27,71 +26,125 @@
 .topnav a:hover {
   background-color: var(--grey);
   color: var(--charcoal);
-  position:fixed;
+  position: fixed;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
   background-color: var(--grey);
-  color: var(--mauve);
+  color: var(--charcoal);
 }
 
+/* name font */
 .head {
-font-family: 'Montserrat', sans-serif;
-font-family: 'Open Sans', sans-serif;
-font-size: 36px;
+  font-size: 36px;
 }
 
 body {
-color:var(--mauve);
-height:inherit
+  color: var(--mauve);
+  height: inherit
 }
 
-html { 
-    background: url(../images/15-8x10.jpg) no-repeat center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
+html {
+  background: url(../images/15-8x10.jpg) no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
- h1 { 
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 72px;
-    font-weight: lighter;
-}  
-
-h2 { 
+h1 {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
-  font-family: 'Open Sans', sans-serif;
+  font-size: 72px;
+  font-weight: lighter;
+}
+
+/* on bottom with projects */
+h2 {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
   font-size: 48px;
   font-weight: lighter;
-}  
+}
 
+/* placeholder images */
 section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    position: bottom;
-    position:relative;
-    top:100em;
-    padding-bottom:20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: bottom;
+  position: relative;
+  top: 100em;
+  padding-bottom: 60%;
 }
 
 .circular_image {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    overflow: hidden;
-    float:right;
-    position: absolute;
-    right: 5%;
-    top: 15%
-  }
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  float: right;
+  position: absolute;
+  right: 3%;
+  top: 15%
+}
 
-  .circular_image img{
-    width:100%;
-  }
+.circular_image img {
+  width: 100%;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text],
+select,
+textarea {
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--grey);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+/* Styled the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: var(--grey);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* When moving the mouse over the submit button, add a darker color */
+input[type=submit]:hover {
+  background-color: var(--charcoal);
+}
+
+/* Add background color */
+.container {
+  border-radius: 5px;
+  background-color: var(--gunmetal);
+  padding: 40px;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.figure {
+  position: bottom;
+  padding-bottom: 80%;
+  place-content: bottom;
+
+}
+
+h3 {
+  place-content: bottom;
+  position: bottom;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 10%;
+}
