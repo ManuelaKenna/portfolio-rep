@@ -78,8 +78,8 @@ section {
   justify-content: space-around;
   position: bottom;
   position: relative;
-  top: 100em;
-  padding-bottom: 60%;
+  top: 50em;
+  padding-bottom: 70%;
 }
 
 .circular_image {
@@ -97,7 +97,7 @@ section {
   width: 100%;
 }
 
-/* Style inputs with type="text", select elements and textareas */
+
 input[type=text],
 select,
 textarea {
@@ -139,7 +139,7 @@ input[type=submit]:hover {
 
 .figure {
   position: bottom;
-  padding-bottom: 80%;
+  padding-bottom: 20%;
   place-content: bottom;
 
 }
